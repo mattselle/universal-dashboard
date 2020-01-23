@@ -4,13 +4,24 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased]
+## Unreleased 
+
+### Changed
+
+- Fixed issue with DarkRounded theme - https://github.com/ironmansoftware/universal-dashboard/issues/1467
+
+### Changed (Enterprise)
+
+- Authorization policies can now be assigned to endpoints - https://github.com/ironmansoftware/universal-dashboard/issues/1442
+
+## 2.8.2 (1-20-2019)
 
 ### Added
 
 - Added support for Set-UDElement, Remove-UDElement and Clear-UDElement events on New-UDCheckbox (#1368) by [BoSen29](https://github.com/BoSen29)
 - Added support for UDTab load data when his the active tab (#1392, #1169) by [alongvili](https://github.com/alongvili)
-
+- Allow Specification of Font in Themes
+- Added -RenderWhenActive to New-UDTabContainer to only render tabs when they are active by [adamdriscoll](https://github.com/adamdriscoll)
 
 ### Added (Enterprise)
 ### Changed
@@ -23,7 +34,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Fix New-CarouselItem URL parameter not functioning (#1417) by [alongvili](https://github.com/alongvili)
 - Fix UDMUChip -OnDelete parameter not working (#1423) by [alongvili](https://github.com/alongvili)
 - Connection management now uses a ConcurrentDictionary rather than locks by [adamdriscoll](https://github.com/adamdriscoll)
-
+- Changed Active Tab Color and Font Slightly to be more uniform with rest of dashboard
+- Fixed issue where Get-UDDashboard wouldn't return anything when hosting in IIS by [adamdriscoll](https://github.com/adamdriscoll)
 
 ### Changed (Enterprise)
 
